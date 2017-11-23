@@ -1,0 +1,34 @@
+{
+    "tables": {
+        "railway_entrance": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+                {
+                    "type": "string",
+                    "name": "subway_entrance",
+                    "key": "railway"
+                },
+                {
+                    "type": "string",
+                    "name": "name",
+                    "key": "name"
+                },            
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "polygon",
+            "mapping": {
+                "railway": [
+                    "subway_entrance"
+                ]
+            }
+        }
+    }
+}
