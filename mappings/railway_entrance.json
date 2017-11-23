@@ -12,6 +12,11 @@
                     "name": "subway_entrance",
                     "key": "railway"
                 },
+		{
+		    "type": "integer",
+		    "name": "exit_number",
+		    "key": "ref"
+		},
                 {
                     "type": "string",
                     "name": "name",
@@ -23,7 +28,7 @@
                     "key": "geometry"
                 }
             ],
-            "type": "polygon",
+            "type": "point",
             "mapping": {
                 "railway": [
                     "subway_entrance"
