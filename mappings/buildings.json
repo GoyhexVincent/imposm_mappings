@@ -1,0 +1,29 @@
+{
+    "tables": {
+        "buildings": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+                {
+                    "type": "string",
+                    "name": "height",
+                    "key": "height"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "point",
+            "mapping": {
+                "building:part": [
+                    "yes"
+                ]
+            }
+        }
+    }
+}
