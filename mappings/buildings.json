@@ -7,22 +7,51 @@
                     "name": "id_osm",
                     "key": "id_osm"
                 },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name"
+		},
                 {
                     "type": "string",
                     "name": "height",
                     "key": "height"
                 },
+		{
+		    "type": "integer",
+		    "name": "level", 
+		    "key": "level"
+		},
+		{
+		    "type": "integer",
+		    "name": "building_part",
+		    "key": "part"
+		},
+		{
+	            "type": "string",
+		    "name": "amenity",
+		    "key": "amenity"
+		},
+		{
+		    "type": "string", 
+		    "name": "source", 
+		    "key": "source"
+		},
                 {
                     "type": "geometry",
                     "name": "geom",
                     "key": "geometry"
                 }
+
             ],
             "type": "polygon",
             "mapping": {
-                "building:part": [
-                    "yes"
-                ]
+                "building": [
+                    "__any__"
+                ],
+	        "building:part":[
+		    "yes"
+		]
             }
         }
     }
