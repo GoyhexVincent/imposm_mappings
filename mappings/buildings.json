@@ -18,7 +18,7 @@
                     "key": "geometry"
                 }
             ],
-            "type": "point",
+            "type": "polygon",
             "mapping": {
                 "building:part": [
                     "yes"
