@@ -1,0 +1,74 @@
+{
+    "tables": {
+        "piste": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+                {
+                    "type": "string",
+                    "name": "type",
+                    "key": "piste:type"
+                },
+		{
+                    "type": "string",
+                    "name": "difficulty",
+                    "key": "piste:difficulty"
+                },
+		{
+                    "type": "string",
+                    "name": "name",
+                    "key": "name"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "linestring",
+            "mapping": {
+                "piste": [
+                    "__any__"
+                ],
+		"piste:type": [
+		    "__any__"
+		]
+            }
+        },
+        
+        "aerialway": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+                    "type": "string",
+                    "name": "occupancy",
+                    "key": "aerialway:occupancy"
+                },
+		{
+                    "type": "string",
+                    "name": "name",
+                    "key": "name"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "linestring",
+            "mapping": {
+                "aerialway": [
+                    "chair_lift",
+		    "platter"
+                ]
+            }
+        }
+    }
+}

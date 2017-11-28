@@ -1,0 +1,55 @@
+{
+    "tables": {
+        "glacier": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+                {
+                    "type": "string",
+                    "name": "glacier",
+                    "key": "natural"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "polygon",
+            "mapping": {
+                "natural": [
+                    "glacier"
+                ]
+            }
+        },
+        "glacier": {
+             "fields": [
+                 {
+                     "type": "id",
+                     "name": "id_osm",
+                     "key": "id_osm"
+                 },
+                 {
+                     "type": "string",
+                     "name": "glacier",
+                     "key": "natural"
+                 },
+                 {
+                     "type": "geometry",
+                     "name": "geom",
+                     "key": "geometry"
+                 }
+             ],
+             "type": "polygon",
+             "mapping": {
+                 "natural": [
+                     "glacier"
+                ]
+            }
+        }
+  
+    }
+}
