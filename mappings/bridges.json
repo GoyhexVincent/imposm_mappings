@@ -1,0 +1,45 @@
+{
+    "tables": {
+        "bridges": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name"
+		},
+		{
+		    "type": "integer",
+		    "name": "layer", 
+		    "key": "layer"
+		},
+		{
+		    "type": "integer",
+		    "name": "type",
+		    "key": "man_made"
+		},
+		{
+		    "type": "string", 
+		    "name": "source", 
+		    "key": "source"
+		},
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+
+            ],
+            "type": "polygon",
+            "mapping": {
+                "man_made": [
+                    "bridge"
+                ]
+            }
+        }
+    }
+}
