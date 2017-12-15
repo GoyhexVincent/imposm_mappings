@@ -1,0 +1,90 @@
+{
+    "tables": {
+        "roads": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+                    "type": "string",
+                    "name": "highway",
+                    "key": "highway"
+                },
+		{
+                    "type": "string",
+                    "name": "lit",
+                    "key": "lit"
+                },
+                {
+                    "type": "string",
+                    "name": "bicycle",
+                    "key": "bicycle"
+                },
+		{
+                    "type": "string",
+                    "name": "busway",
+                    "key": "busway"
+                },		
+		{
+                    "type": "integer",
+                    "name": "lane",
+                    "key": "lane"
+                },
+		{
+                    "type": "string",
+                    "name": "oneway",
+                    "key": "oneway"
+                },
+		{
+                    "type": "string",
+                    "name": "maxspeed",
+                    "key": "maxspeed"
+                },
+		{
+                    "type": "string",
+                    "name": "name",
+                    "key": "name"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "linestring",
+            "mapping": {
+                "man_made": [
+                    "pier",
+                    "groyne"
+                ],
+                "highway": [
+                    "motorway",
+                    "motorway_link",
+                    "trunk",
+                    "trunk_link",
+                    "primary",
+                    "primary_link",
+                    "secondary",
+                    "secondary_link",
+                    "tertiary",
+                    "tertiary_link",
+                    "road",
+                    "path",
+                    "track",
+                    "service",
+                    "footway",
+                    "bridleway",
+                    "cycleway",
+                    "steps",
+                    "pedestrian",
+                    "living_street",
+                    "unclassified",
+                    "residential",
+                    "raceway"
+                ]
+            }
+        }
+    }
+}

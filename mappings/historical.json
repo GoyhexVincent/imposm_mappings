@@ -1,0 +1,74 @@
+{
+    "tables": {
+        "historical_poi": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+                {
+                    "type": "string",
+                    "name": "historic",
+                    "key": "historic"
+                },
+		{
+                    "type": "string",
+                    "name": "site_type",
+                    "key": "site_type"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "point",
+            "mapping": {
+                "historic": [
+                    "__any__"
+                ]
+            }
+	},
+        "historical_polygons": {
+             "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+                {
+                    "type": "string",
+                    "name": "historic",
+                    "key": "historic"
+                },
+		{
+                    "type": "string",
+                    "name": "site_type",
+                    "key": "site_type"
+                },
+		{
+                    "type": "string",
+                    "name": "tourism",
+                    "key": "tourism"
+                },
+		{
+                    "type": "string",
+                    "name": "civilization",
+                    "key": "historic:civilization"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "polygon",
+            "mapping": {
+                "historic": [
+                    "__any__"
+                ]
+            }
+	}
+    }
+}
