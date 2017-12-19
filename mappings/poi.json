@@ -1,0 +1,64 @@
+{
+    "tables": {
+        "restaurants": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+                    "type": "string",
+                    "name": "cuisine",
+                    "key": "cuisine"
+                },
+		{    "type": "string", 
+		     "name": "amenity",
+		     "key": "amenity"
+		},
+		{
+		    "type": "string",
+		    "name": "name",
+		    "key": "name"
+		},
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "point",
+            "mapping": {
+                "amenity": [
+                    "__any__"
+                ]
+            }
+	},
+	"shop": {
+	    "fields": [
+	        {
+		    "type": "id",
+		    "name": "id_osm",
+		    "key": "id_osm"
+		},
+		{
+		    "type": "string",
+		    "name": "name",
+		    "key": "name"
+		},
+		{
+	            "type": "string",
+		    "name": "shop",
+		    "key": "shop"
+		}
+
+            ],
+	    "type": "point",
+	    "mapping": {
+	        "shop": [
+		    "__any__"
+		]
+	    }
+        }
+    }
+}
