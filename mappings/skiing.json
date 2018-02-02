@@ -51,6 +51,10 @@
                     "name": "occupancy",
                     "key": "aerialway:occupancy"
                 },
+		{   "type": "string",
+		    "name": "aerialway",
+		    "key": "aerialway"
+		},
 		{
                     "type": "string",
                     "name": "name",
@@ -67,7 +71,8 @@
                 "aerialway": [
                     "chair_lift",
 		    "platter",
-		    "gondola"
+		    "gondola",
+		    "mixed_lift"
                 ]
             }
         }
