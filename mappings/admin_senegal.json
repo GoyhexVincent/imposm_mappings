@@ -1,0 +1,79 @@
+{
+    "tables": {
+        "regions": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name"
+		},
+		{
+		    "type": "integer",
+		    "name": "admin_level", 
+		    "key": "admin_level"
+		},
+                {
+                    "type": "string",
+                    "name": "boundary",
+                    "key": "boundary"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+
+            ],
+            "type": "polygon",
+            "mapping": {
+                "admin_level": [
+                    "3"
+                ]
+            }
+        },
+        "departements": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name"
+		},
+		{
+		    "type": "integer",
+		    "name": "admin_level", 
+		    "key": "admin_level"
+		},
+                {
+                    "type": "string",
+                    "name": "boundary",
+                    "key": "boundary"
+                },
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+
+            ],
+            "type": "polygon",
+            "mapping": {
+                "admin_level": [
+                    "6",
+                    "7"
+                ]
+            }
+        },
+
+
+    }
+}

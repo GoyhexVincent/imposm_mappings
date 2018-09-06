@@ -1,0 +1,38 @@
+{
+    "tables": {
+        "restaurants": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{    "type": "string", 
+		     "name": "amenity",
+		     "key": "amenity"
+		},
+                {
+                     "type": "string",
+                     "name": "source",
+                     "key": "source"
+                },
+		{
+		    "type": "string",
+		    "name": "name",
+		    "key": "name"
+		},
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+            ],
+            "type": "point",
+            "mapping": {
+                "amenity": [
+                    "childcare"
+                ]
+            }
+	}
+    }
+}
