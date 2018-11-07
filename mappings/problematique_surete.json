@@ -1,0 +1,127 @@
+{
+    "tables": {
+        "embassy": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name:en"
+		},
+                {
+                    "type": "string",
+                    "name": "country",
+                    "key": "country"
+                },
+		{
+		    "type": "integer",
+		    "name": "access", 
+		    "key": "access"
+		},
+		{
+	            "type": "string",
+		    "name": "amenity",
+		    "key": "amenity"
+		},
+		{
+		    "type": "string", 
+		    "name": "source", 
+		    "key": "source"
+		},
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+
+            ],
+            "type": "polygon",
+            "mapping": {
+                "amenity":[
+                    "embassy"
+                ]
+            }
+        },
+        "place_of_worship": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name"
+		},
+		{
+	            "type": "string",
+		    "name": "amenity",
+		    "key": "amenity"
+		},
+                {
+                    "type": "string",
+                    "name": "religion",
+                    "key": "religion"
+                },
+		{
+		    "type": "string", 
+		    "name": "source", 
+		    "key": "source"
+		},
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+
+            ],
+            "type": "polygon",
+            "mapping": {
+                "amenity": [
+                    "place_of_worship"
+		]
+            }
+        },
+        "courthouse": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name"
+		},
+		{
+	            "type": "string",
+		    "name": "amenity",
+		    "key": "amenity"
+		},
+		{
+		    "type": "string", 
+		    "name": "source", 
+		    "key": "source"
+		},
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+
+            ],
+            "type": "polygon",
+            "mapping": {
+                "amenity": [
+                    "courthouse"
+		]
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "tables": {
+        "embassy": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "id_osm",
+                    "key": "id_osm"
+                },
+		{
+	            "type": "string", 
+		    "name": "name", 
+		    "key": "name:en"
+		},
+                {
+                    "type": "string",
+                    "name": "country",
+                    "key": "country"
+                },
+		{
+		    "type": "integer",
+		    "name": "access", 
+		    "key": "access"
+		},
+		{
+	            "type": "string",
+		    "name": "amenity",
+		    "key": "amenity"
+		},
+		{
+		    "type": "string", 
+		    "name": "source", 
+		    "key": "source"
+		},
+                {
+                    "type": "geometry",
+                    "name": "geom",
+                    "key": "geometry"
+                }
+
+            ],
+            "type": "polygon",
+            "mapping": {
+                "building": [
+                    "__any__"
+		]
+            }
+        }
+    }
+}
