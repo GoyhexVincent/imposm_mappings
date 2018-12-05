@@ -1,0 +1,49 @@
+tables:
+  disabilities_linestring:
+    type: linestring
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: validated_geometry
+    - name: tactile_paving
+      key: tactile_paving
+      type: string
+    - name: type
+      key: type
+      type: string
+    mapping:
+      tactile_paving:
+      - __any__
+  disabilities_points:
+    type: point
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: validated_geometry
+    - name: tactile_paving
+      key: tactile_paving
+      type: string
+    - name: type
+      key: type
+      type: string
+    mapping:
+      tactile_paving:
+      - __any__
+  disabilities_polygons:
+    type: polygon
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: validated_geometry
+    - name: tactile_paving
+      key: tactile_paving
+      type: string
+    - name: type
+      key: type
+      type: string
+    mapping:
+      tactile_paving:
+      - __any__
