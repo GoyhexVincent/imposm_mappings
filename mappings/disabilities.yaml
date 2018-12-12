@@ -1,5 +1,5 @@
 tables:
-  disabilities_linestring:
+  tactile_paving_linestring:
     type: linestring
     fields:
     - name: osm_id
@@ -15,7 +15,7 @@ tables:
     mapping:
       tactile_paving:
       - __any__
-  disabilities_points:
+  tactile_paving_points:
     type: point
     fields:
     - name: osm_id
@@ -31,7 +31,7 @@ tables:
     mapping:
       tactile_paving:
       - __any__
-  disabilities_polygons:
+  tactile_paving_polygons:
     type: polygon
     fields:
     - name: osm_id
@@ -46,4 +46,52 @@ tables:
       type: string
     mapping:
       tactile_paving:
+      - __any__
+  wheelchair_linestring:
+    type: linestring
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: validated_geometry
+    - name: wheelchair
+      key: wheelchair
+      type: string
+    - name: type
+      key: type
+      type: string
+    mapping:
+      wheelchair:
+      - __any__
+  wheelchair_points:
+    type: point
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: validated_geometry
+    - name: wheelchair
+      key: wheelchair
+      type: string
+    - name: type
+      key: type
+      type: string
+    mapping:
+      wheelchair:
+      - __any__
+  wheelchair_polygons:
+    type: polygon
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: validated_geometry
+    - name: wheelchair
+      key: wheelchair
+      type: string
+    - name: type
+      key: type
+      type: string
+    mapping:
+      wheelchair:
       - __any__
